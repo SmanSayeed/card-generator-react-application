@@ -1,0 +1,18 @@
+.body.dark-mode {
+  background: black;
+  color: white;
+  font-family: 'Arial', sans-serif;
+}
+ul {
+  list-style: none;
+  padding: 0;
+}
+.badge {
+  display: inline-block;
+  font-size: 0.875em;
+  margin-right: 0.25rem;
+  padding: 0.25rem 0.5rem;
+}
+.card {
+  background: linear-gradient(135deg, rgba(63,94,251,1) 0%, rgba(252,70,107,1) 100%);
+}
