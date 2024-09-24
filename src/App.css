@@ -15,7 +15,7 @@ ul {
   background: rgba(255,255,255,0.8);
 }
 .card {
-  background: linear-gradient(135deg, rgba(63,94,251,1) 0%, rgba(252,70,107,1) 100%);
+  background: linear-gradient(135deg, rgb(16, 29, 48) 0%, rgb(2, 67, 104) 100%);
 }
 /* Ensure hamburger button visibility on mobile */
 @media (min-width: 768px) {

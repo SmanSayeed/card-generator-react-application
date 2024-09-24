@@ -10,6 +10,7 @@ const cardSlice = createSlice({
     profileImage: '',
     personalWebsite: '',
     linkedin: '',
+    github:'',
     skills: '',
     theme: 'dark', // default theme
   },

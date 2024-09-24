@@ -61,7 +61,7 @@ const Layout = () => {
       </div>
 
       {/* Content */}
-      <div className="fixed top-20 right-[25%] bottom-0">
+      <div className="fixed top-20 right-[10%] bottom-0">
         <CardGenerator/>
       </div>
     </div>

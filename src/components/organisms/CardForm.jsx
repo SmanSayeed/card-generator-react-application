@@ -43,9 +43,16 @@ const CardForm = () => {
         />
         <FormField 
           type="text" 
-          label="LinkedIn" 
+          label="LinkedIn Username" 
           name="linkedin" 
           value={card.linkedin} 
+          onChange={handleChange} 
+        />
+         <FormField 
+          type="text" 
+          label="Github Username" 
+          name="github" 
+          value={card.github} 
           onChange={handleChange} 
         />
         <FormField 
