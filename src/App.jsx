@@ -3,6 +3,7 @@ import { useDispatch, useSelector } from 'react-redux';
 import { updateField, setTheme } from './features/cardSlice';
 import './App.css';
 import CardGenerator from './components/template/CardGenerator';
+import Layout from './components/layout/Layout';
 
 const themes = {
   dark: "bg-gray-800 text-white",
@@ -15,9 +16,15 @@ const themes = {
 function App() {
  
   return (
-    <div className="p-8 min-h-screen bg-gray-800 text-white">
+    <>
+    <Layout>
+
     <CardGenerator />
-  </div>
+    </Layout>
+    </>
+  //   <div className="p-8 min-h-screen bg-gray-800 text-white">
+  //   {/* <CardGenerator /> */}
+  // </div>
   );
 }
 

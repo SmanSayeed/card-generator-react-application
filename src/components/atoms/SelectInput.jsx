@@ -1,7 +1,7 @@
 import React from 'react';
 
 const SelectInput = ({ label, name, value, onChange, options }) => (
-  <div className="mb-4">
+  <div className="mb-1">
     {label && <label className="block text-sm mb-1">{label}</label>}
     <select
       name={name}
