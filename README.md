@@ -10,7 +10,6 @@
   - **LinkedIn**: [linkedin.com/in/saadman-sayeed](https://www.linkedin.com/in/saadman-sayeed)
   - **Facebook**: [facebook.com/saadman2](https://www.facebook.com/saadman2) ( Send me a message, if you want to contribute here )
   - **GitHub**: [github.com/saadman-sayeed](https://github.com/saadman-sayeed)
-  - **Portfolio** [sman.dev](https://www.sman.dev)
 
 ---
 
