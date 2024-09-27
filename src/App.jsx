@@ -1,31 +1,23 @@
-import React from 'react';
-import { useDispatch, useSelector } from 'react-redux';
-import { updateField, setTheme } from './features/cardSlice';
-import './App.css';
-import CardGenerator from './components/template/CardGenerator';
-import Layout from './components/layout/Layout';
-
-const themes = {
-  dark: "bg-gray-800 text-white",
-  light: "bg-white text-black",
-  green: "bg-green-200 text-black",
-  blue: "bg-blue-200 text-black",
-  minimal: "bg-gray-200 text-black",
-};
+import React from 'react'
+import { useDispatch, useSelector } from 'react-redux'
+import { updateField, setTheme } from './features/cardSlice'
+import CardGenerator from './components/template/CardGenerator'
+import Layout from './components/layout/Layout'
+import { ModeToggle } from "./components/ui/mode-toggle"
 
 function App() {
- 
   return (
-    <>
-    <Layout>
-
-    <CardGenerator />
-    </Layout>
-    </>
-  //   <div className="p-8 min-h-screen bg-gray-800 text-white">
-  //   {/* <CardGenerator /> */}
-  // </div>
-  );
+    <div className="min-h-screen bg-background text-foreground">
+      <Layout>
+        <div className="container mx-auto p-8">
+          <header className="flex justify-end items-center mb-8">
+            <ModeToggle />
+          </header>
+          <CardGenerator />
+        </div>
+      </Layout>
+    </div>
+  )
 }
 
-export default App;
+export default App
