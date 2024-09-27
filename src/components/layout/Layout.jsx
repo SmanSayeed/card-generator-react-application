@@ -1,69 +1,45 @@
 import React, { useState } from "react";
-import { Transition } from "@headlessui/react";
+import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet";
+import { Button } from "@/components/ui/button";
+import { ScrollArea } from "@/components/ui/scroll-area";
 import CardForm from "../organisms/CardForm";
-import CardGenerator from "../template/CardGenerator";
+import { X, Menu } from "lucide-react";
 
-const Layout = () => {
+const Layout = ({ children }) => {
   const [isDrawerOpen, setIsDrawerOpen] = useState(false);
 
   return (
-    <div className="min-h-screen bg-gray-800 text-white">
+    <div className="min-h-screen bg-background text-foreground">
       {/* Top Bar */}
-      <div className="fixed top-0 left-0 right-0 bg-gray-900 p-4 shadow-md z-20">
+      <header className="fixed top-0 left-0 right-0 bg-background border-b p-4 z-20">
         <div className="flex justify-between items-center">
           <div className="text-xl font-bold">Logo</div>
-          <button
-            className="md:hidden"
-            onClick={() => setIsDrawerOpen(!isDrawerOpen)}
-          >
-            {isDrawerOpen ? (
-              <div className="w-6 h-6 text-white">X</div>
-            ) : (
-              <div className="w-12 h-6 mr-5 text-white">Edit Card</div>
-            )}
-          </button>
+          <Sheet open={isDrawerOpen} onOpenChange={setIsDrawerOpen}>
+            <SheetTrigger asChild>
+              <Button variant="outline" size="icon" className="md:hidden">
+                {isDrawerOpen ? <X className="h-4 w-4" /> : <Menu className="h-4 w-4" />}
+              </Button>
+            </SheetTrigger>
+            <SheetContent side="left" className="w-[80%] sm:w-[385px] p-0">
+              <ScrollArea className="h-full p-4">
+                <CardForm />
+              </ScrollArea>
+            </SheetContent>
+          </Sheet>
         </div>
-      </div>
-
-      {/* Mobile Drawer */}
-       {/* Mobile Drawer */}
-       <Transition
-        show={isDrawerOpen}
-        enter="transition ease-out duration-300"
-        enterFrom="-translate-x-full"
-        enterTo="translate-x-0"
-        leave="transition ease-in duration-300"
-        leaveFrom="translate-x-0"
-        leaveTo="-translate-x-full"
-        className="fixed inset-y-0 left-0 z-30 w-4/5 bg-gray-900 p-4 md:hidden overflow-y-scroll"
-      >
-        <div className="overflow-y-auto h-full">
-          <button className="mb-4" onClick={() => setIsDrawerOpen(false)}>
-            <div className="w-6 h-6 text-white">X</div>
-          </button>
-          <div className="">
-            <CardForm />
-          </div>
-        </div>
-      </Transition>
+      </header>
 
       {/* Desktop Drawer */}
-      <div
-        className={` w-1/2 bg-gray-900 p-4 shadow-md hidden md:block translate-x-0 h-[100vh]`}
-      >
-        <button className="mb-4" onClick={() => setIsDrawerOpen(false)}>
-          <div className="w-6 h-6 text-white">X</div>
-        </button>
-        <div className="w-[100%] flex justify-end items-center flex-col">
-        <CardForm />
-        </div>
-      
+      <div className="hidden md:block fixed left-0 top-[65px] bottom-0 w-1/2 bg-background border-r p-4 overflow-hidden">
+        <ScrollArea className="h-full">
+          <CardForm />
+        </ScrollArea>
       </div>
 
       {/* Content */}
-      <div className="fixed top-20 right-[10%] bottom-0">
-        <CardGenerator/>
-      </div>
+      <main className="md:ml-[50%] pt-[65px] p-4">
+        {children}
+      </main>
     </div>
   );
 };
