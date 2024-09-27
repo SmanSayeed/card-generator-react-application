@@ -13,9 +13,13 @@ const Layout = ({ children }) => {
       {/* Top Bar */}
       <header className="fixed top-0 left-0 right-0 bg-background border-b p-4 z-20">
         <div className="flex justify-between items-center">
-          <div >
-            <h2 className="text-xl font-bold">Card Generator</h2>
-            <p className="text-sm font-bold">Developed by Team Find Web Developer (Bangladesh) <a target="_blank" className="text-blue-500 curosor-pointer border border-blue-500 rounded p-1" href="https://github.com/SmanSayeed/card-generator-react-application">Details</a></p>
+          <div className="flex gap-4 justify-center items-center">
+            <img src="/public/logo.png" className="h-10 w-10" alt="logo" />
+            <div>
+            <h2 className="text-md md:text-xl font-bold">Card Generator</h2>
+            <p className="text-xs md:text-sm font-bold">Developed by Team Find Web Developer (Bangladesh) <a target="_blank" className="text-blue-500 curosor-pointer border border-blue-500 rounded p-1" href="https://github.com/SmanSayeed/card-generator-react-application">Details</a></p>
+            </div>
+          
             </div>
           <Sheet open={isDrawerOpen} onOpenChange={setIsDrawerOpen}>
             <SheetTrigger asChild>
