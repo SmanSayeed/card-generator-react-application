@@ -11,7 +11,6 @@
   - **Facebook**: [facebook.com/saadman2](https://www.facebook.com/saadman2) ( Send me a message, if you want to contribute here )
   - **GitHub**: [github.com/saadman-sayeed](https://github.com/saadman-sayeed)
 - **Khodadad Md Ziaul Huda**  
-  - **Portfolio**: [sman.dev](https://sman.dev)  
   - **LinkedIn**: [linkedin.com/in/k-md-ziaul-huda](https://www.linkedin.com/in/k-md-ziaul-huda)
   - **Facebook**: [facebook.com/kmzhzitu](https://www.facebook.com/kmzhzitu) ( Send me a message, if you want to contribute here )
   - **GitHub**: [github.com/iksZ963](https://github.com/iksZ963)
