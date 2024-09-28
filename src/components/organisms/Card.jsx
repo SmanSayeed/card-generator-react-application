@@ -17,6 +17,16 @@ const themes = {
   ocean: "bg-gradient-to-r from-blue-400 via-blue-500 to-blue-600 text-white",
   sunset:
     "bg-gradient-to-br from-orange-400 via-pink-500 to-purple-600 text-white",
+  neonDreams:
+    "bg-gradient-to-r from-purple-500 via-pink-500 to-red-500 text-white shadow-lg shadow-pink-500/50",
+  frostyMint:
+    "bg-gradient-to-br from-teal-300 via-lime-300 to-emerald-500 text-gray-800 shadow-md shadow-emerald-300/30",
+  cosmicFusion:
+    "bg-[conic-gradient(at_top_right,_var(--tw-gradient-stops))] from-indigo-700 via-purple-500 to-pink-500 text-white shadow-xl shadow-purple-500/30",
+  goldenHour:
+    "bg-gradient-to-bl from-amber-200 via-yellow-400 to-orange-500 text-gray-900 shadow-md shadow-orange-300/40",
+  northernLights:
+    "bg-[radial-gradient(ellipse_at_top_right,_var(--tw-gradient-stops))] from-green-300 via-blue-500 to-purple-600 text-white shadow-lg shadow-blue-500/50",
 };
 
 const ProfileCard = forwardRef((props, ref) => {
@@ -129,7 +139,7 @@ const ProfileCard = forwardRef((props, ref) => {
           rel="noopener noreferrer"
           className={`${linkClass} font-bold`}
         >
-          <Facebook className="w-5 h-5" />  Find Web Developer (Bangladesh)
+          <Facebook className="w-5 h-5" /> Find Web Developer (Bangladesh)
         </a>
       </CardFooter>
     </Card>
