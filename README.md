@@ -14,11 +14,11 @@
   - **LinkedIn**: [linkedin.com/in/k-md-ziaul-huda](https://www.linkedin.com/in/k-md-ziaul-huda)
   - **Facebook**: [facebook.com/kmzhzitu](https://www.facebook.com/kmzhzitu) ( Send me a message, if you want to contribute here )
   - **GitHub**: [github.com/iksZ963](https://github.com/iksZ963)
-
+- **Razib Hosen** 
+- **LinkedIn**: [https://bd.linkedin.com/in/razibhosen24](https://bd.linkedin.com/in/razibhosen24)
+- **Facebook**: [https://facebook.com/razibhosen240](https://facebook.com/razibhosen240)
+- **GitHub**: [https://github.com/razibhosen24](https://github.com/razibhosen24)
 ---
-LinkedIn: 
-
-GitHub: 
 
 ## **Technology Stack**  
 - **Frontend**: React JS, Tailwind CSS, Redux Toolkit
