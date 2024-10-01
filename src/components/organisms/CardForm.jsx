@@ -152,6 +152,11 @@ const CardForm = () => {
                 { value: "nature", label: "Nature" },
                 { value: "ocean", label: "Ocean" },
                 { value: "sunset", label: "Sunset" },
+                { value: "neonDreams", label: "Neon Dreams" },
+                { value: "frostyMint", label: "Frosty Mint" },
+                { value: "cosmicFusion", label: "Cosmic Fusion" },
+                { value: "goldenHour", label: "Golden Hour" },
+                { value: "northernLights", label: "Northern Lights" },
               ]}
             />
           </div>
