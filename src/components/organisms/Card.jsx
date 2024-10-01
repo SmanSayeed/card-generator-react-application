@@ -64,6 +64,7 @@ const ProfileCard = forwardRef((props, ref) => {
             Find Web Developer (Bangladesh)
           </p>
         </div>
+       
         <div className="space-y-2 px-4">
           {card.linkedin && (
             <a
@@ -72,7 +73,15 @@ const ProfileCard = forwardRef((props, ref) => {
               rel="noopener noreferrer"
               className={linkClass}
             >
-              <Linkedin className="w-5 h-5" /> {card.linkedin}
+              {/* <Linkedin className="w-5 h-5" /> {card.linkedin} */}
+              <div className="flex items-center">
+                <Linkedin className="w-5 h-5 mr-2" />
+                <span className="truncate">
+                  {card.linkedin.length > 25
+                    ? `${card.linkedin.slice(0, 25)}`
+                    : card.linkedin}
+                </span>
+              </div>
             </a>
           )}
           {card.github && (
@@ -82,7 +91,15 @@ const ProfileCard = forwardRef((props, ref) => {
               rel="noopener noreferrer"
               className={linkClass}
             >
-              <Github className="w-5 h-5" /> {card.github}
+              {/* <Github className="w-5 h-5" /> {card.github} */}
+              <div className="flex items-center">
+                <Github className="w-5 h-5 mr-2" />
+                <span className="truncate">
+                  {card.github.length > 25
+                    ? `${card.github.slice(0, 25)}`
+                    : card.github}
+                </span>
+              </div>
             </a>
           )}
           {card.personalWebsite && (
@@ -92,10 +109,21 @@ const ProfileCard = forwardRef((props, ref) => {
               rel="noopener noreferrer"
               className={linkClass}
             >
-              <Globe className="w-5 h-5" /> {card.personalWebsite}
+              {/* <Globe className="w-5 h-5" /> {card.personalWebsite} */}
+              <div className="flex items-center">
+                <Globe className="w-5 h-5 mr-2" />
+                <span className="truncate">
+                  {card.personalWebsite.length > 25
+                    ? `${card.personalWebsite.slice(0, 25)}`
+                    : card.personalWebsite}
+                </span>
+              </div>
             </a>
           )}
         </div>
+
+        <div className="flex item-center justify-center">
+        <div>
         {card.skills && (
           <div className="px-4">
             <p className={`${baseTextClass} font-bold mb-2 text-lg`}>Skills</p>
@@ -118,6 +146,10 @@ const ProfileCard = forwardRef((props, ref) => {
             </div>
           </div>
         )}
+        </div>
+       </div>
+
+       
       </CardContent>
       <CardFooter
         className={`flex flex-col items-center ${sectionClass} mt-4 py-3`}
@@ -129,7 +161,7 @@ const ProfileCard = forwardRef((props, ref) => {
           rel="noopener noreferrer"
           className={`${linkClass} font-bold`}
         >
-          <Facebook className="w-5 h-5" />  Find Web Developer (Bangladesh)
+          <Facebook className="w-5 h-5" /> Find Web Developer (Bangladesh)
         </a>
       </CardFooter>
     </Card>

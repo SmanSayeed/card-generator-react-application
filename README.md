@@ -18,6 +18,12 @@
 - **LinkedIn**: [https://bd.linkedin.com/in/razibhosen24](https://bd.linkedin.com/in/razibhosen24)
 - **Facebook**: [https://facebook.com/razibhosen240](https://facebook.com/razibhosen240)
 - **GitHub**: [https://github.com/razibhosen24](https://github.com/razibhosen24)
+
+- **Ahnaf Hasnain Nahiun**  
+  - **LinkedIn**: [linkedin.com/in/ahnafhasnainnahiun/](https://www.linkedin.com/in/ahnafhasnainnahiun/)
+  - **Facebook**: [facebook.com/ahnafhasnain.nahiun](https://www.facebook.com/ahnafhasnain.nahiun)
+  - **GitHub**: [github.com/ahnafhasnainAiub](https://github.com/ahnafhasnainAiub)
+
 ---
 
 ## **Technology Stack**  
