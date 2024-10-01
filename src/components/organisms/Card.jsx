@@ -73,7 +73,7 @@ const ProfileCard = forwardRef((props, ref) => {
               rel="noopener noreferrer"
               className={linkClass}
             >
-              {/* <Linkedin className="w-5 h-5" /> {card.linkedin} */}
+            
               <div className="flex items-center">
                 <Linkedin className="w-5 h-5 mr-2" />
                 <span className="truncate">
@@ -91,7 +91,7 @@ const ProfileCard = forwardRef((props, ref) => {
               rel="noopener noreferrer"
               className={linkClass}
             >
-              {/* <Github className="w-5 h-5" /> {card.github} */}
+             
               <div className="flex items-center">
                 <Github className="w-5 h-5 mr-2" />
                 <span className="truncate">
@@ -109,7 +109,7 @@ const ProfileCard = forwardRef((props, ref) => {
               rel="noopener noreferrer"
               className={linkClass}
             >
-              {/* <Globe className="w-5 h-5" /> {card.personalWebsite} */}
+             
               <div className="flex items-center">
                 <Globe className="w-5 h-5 mr-2" />
                 <span className="truncate">
